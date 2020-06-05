@@ -11,8 +11,9 @@ $(document).ready(function(){
             console.log('all');
         },
     });
-    $('.page2__variant').on('click', function () {
-        $('.page2__variant').each((i, el) => {
+
+    $('.page__variant, .page2__variant').on('click', function () {
+        $(this).parent().children().each((i, el) => {
             $(el).removeClass('active');
         });
         $(this).addClass('active');

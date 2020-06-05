@@ -96,6 +96,7 @@ body {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 5px solid #f7f7f9;
 }
 .page2__text {
     width: 50%;
@@ -210,6 +211,186 @@ body {
 }
 /* END:page2 */
 
+.page3::before, .page4::before, .page5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+/* page3 */
+.main section.page3 {
+    position: relative;
+    background-image: url(../images/mramor.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+}
+.main section.page3 h2 {
+    color: #fff;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1;
+}
+.page__variants {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1373px;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 0;
+}
+.page__variant {
+    width: calc((100% - 80px) / 3);
+    list-style-type: none;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.page__variant img {
+    height: auto;
+    width: 100%;
+    max-height: 258px;
+    box-shadow: 0px 2px 14px 3px rgba(0,0,0,0.75);
+}
+.page__variant:hover .variant__name,
+.page__variant.active .variant__name {
+    color: #14edaf;
+}
+.variant__name {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1;
+    margin-top: 30px;
+    transition: all 0.3s linear;
+}
+/* END:page3 */
+
+/* page4 */
+.page4 {
+    position: relative;
+    background-image: url(../images/fon3.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 103px 109px 144px 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page4 h2 {
+    position: relative;
+    font-weight: 500;
+    font-size: 66px;
+    color: rgba(255, 255, 255, 255);
+    text-align: right;
+    z-index: 1;
+    line-height: 1;
+}
+.deadlines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+}
+.deadlines__item {
+    position: relative;
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    padding-left: 6%;
+}
+.deadlines__item:nth-child(2n) {
+    width: 470px;
+}
+.deadlines__item:first-child {
+    margin-bottom: 90px;
+    background-image: url(../images/Прямоугольник\ 1@1X.png);
+}
+.deadlines__item:nth-child(2) {
+    margin-bottom: 90px;
+    background-image: url(../images/Прямоугольник\ 2@1X.png);
+}
+.deadlines__item:nth-child(3) {
+    background-image: url(../images/Прямоугольник\ 3@1X.png);
+}
+.deadlines__item:last-child {
+    background-image: url(../images/Прямоугольник\ 4@1X.png);
+}
+.deadlines__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.deadlines__title {
+    font-size: 75px;
+    margin-top: -42px;
+    text-align: left;
+    line-height: 1;
+}
+.deadlines__text {
+    text-align: left;
+    padding-bottom: 35px;
+    font-size: 30px;
+    font-size: 28px;
+    line-height: 1.2;
+}
+/* END:page4 */
+
+/* page5 */
+.page5 {
+    position: relative;
+    background-image: url(../images/mramor.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+}
+.page5 h2 {
+    color: #fff;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1;
+}
+/* END:page5 */
+
+.onepage-pagination li a:before {
+    background-color: #00ffc0;
+}
+.onepage-pagination li a.active:before {
+    border: 1px solid #00ffc0;
+}
 
 @media (max-width: 1600px) {
     .main section.page1 h1 {
@@ -238,5 +419,53 @@ body {
     .page2__variant {
         width: 300px;
         margin-right: -90px;
+    }
+    .main section.page3,
+    .page5 {
+        padding: 50px 14%;
+    }
+    .page__variants {
+        margin-top: 30px;
+    }
+    .variant__name {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    .page__variant {
+        width: calc((100% - 100px) / 3);
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .page__variant img {
+        max-height: 180px;
+        width: auto;
+    }
+    .page4 {
+        padding: 50px 80px 50px 14%;
+    }
+    .page4 h2 {
+        font-size: 45px;
+    }
+    .deadlines {
+        max-width: 1000px;
+    }
+    .deadlines__item {
+        width: 300px;
+        height: 150px;
+    }
+    .deadlines__item:nth-child(2n) {
+        width: 420px;
+    }
+    .deadlines__title {
+        font-size: 50px;
+        margin-top: -26px;
+    }
+    .deadlines__text {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .deadlines__item img {
+        height: 80px;
+        width: auto;
     }
 }
