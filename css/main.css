@@ -100,7 +100,6 @@ body {
 }
 .page2__text {
     width: 50%;
-    margin-top: 115px;
     margin-right: 60px;
     color: #fff;
     text-align: right;
@@ -208,6 +207,13 @@ body {
 .page2__variant_name {
     font-size: 28px;
     z-index: 11;
+}
+.page2__text__wrap {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+height: 100%;
 }
 /* END:page2 */
 
