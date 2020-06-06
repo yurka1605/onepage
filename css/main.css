@@ -8,7 +8,7 @@ body {
     font-family: 'Gilroy', sans-serif;
 }
 .page__container {
-    padding: 0 125px;
+    padding: 0 60px;
 }
 /* HEADER */
 .header {
@@ -53,7 +53,6 @@ body {
     font-weight: 600;
 }
 .main-menu {
-    margin-right: 46px;
     border-right: 1px solid #fff;
 }
 .main-menu li a {
@@ -142,7 +141,7 @@ body {
 }
 .page2__material {
     position: relative;
-    padding: 90px;
+    padding: 60px 20px 60px 60px;
     text-align: left;
     z-index: 1;   
 }
@@ -158,16 +157,16 @@ body {
 }
 .page2__variants {
     display: flex;
-    height: 100%;
+    height: inherit;
 }
 .page2__variant {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
-    height: 100%;
-    margin-right: -105px;
+    width: 176px;
+    height: inherit;
+    margin-right: -53px;
     cursor: pointer;
 }
 .page2__variant::before {
@@ -191,6 +190,18 @@ body {
 .page2__variant:nth-child(3)::before {
     background-color: transparent;
 }
+.page2__variant:nth-child(4)::before {
+    background-color: #272727;
+}
+.page2__variant:nth-child(5)::before {
+    background-color: #282828;
+}
+.page2__variant:nth-child(6)::before {
+    background-color: #232323;
+}
+.page2__variant:nth-child(7)::before {
+    background-color: transparent;
+}
 .page2__variant:last-child::before {
     background-color: #272727;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
@@ -205,15 +216,15 @@ body {
     margin-right: 0;
 }
 .page2__variant_name {
-    font-size: 28px;
+    font-size: 24px;
     z-index: 11;
 }
 .page2__text__wrap {
-position: relative;
-display: flex;
-align-items: center;
-justify-content: flex-end;
-height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
 }
 /* END:page2 */
 
@@ -305,10 +316,11 @@ body {
     font-weight: 500;
     font-size: 66px;
     color: rgba(255, 255, 255, 255);
-    text-align: center;
+    text-align: right;
     z-index: 1;
     line-height: 1;
     margin-bottom: 120px;
+    width: 1200px;
 }
 .deadlines {
     display: flex;
@@ -423,8 +435,8 @@ body {
         font-size: 30px;
     }
     .page2__variant {
-        width: 300px;
-        margin-right: -90px;
+        width: 142px;
+        margin-right: -43px;
     }
     .main section.page3,
     .page5 {
@@ -451,6 +463,8 @@ body {
     }
     .page4 h2 {
         font-size: 45px;
+        max-width: 1000px;
+        padding-right: 9%;
     }
     .deadlines {
         max-width: 1000px;
@@ -473,5 +487,20 @@ body {
     .deadlines__item img {
         height: 80px;
         width: auto;
+    }
+    .page2__variant_name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main section.page2 .page2__material h2 {
+        font-size: 36px;
+    }
+    .main section.page2 .page2__material span {
+        font-size: 26px;
+    }
+    .page2__material {
+        padding: 40px 0px 40px 40px;
     }
 }
