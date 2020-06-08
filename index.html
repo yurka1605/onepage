@@ -5,7 +5,7 @@
 	<title>LEIGHT - cамый инновационный кухонный бренд</title>
 	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<meta name="author" content="Litvinov Yuriy">
-	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
 	<link href="css/fonts.css" rel="stylesheet">
 	<link href="css/onepage-scroll.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -188,29 +188,27 @@
 			</section>
 		</div>
     </main>
-	
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			  <span aria-hidden="true">&times;</span>
-			</button>
-		  </div>
-		  <div class="modal-body">
-			...
-		  </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-primary">Save changes</button>
-		  </div>
+	<div class="popup-bg"></div>
+	<div class="popup">
+		<button class="popup__close-btn">×</button>
+		<div class="popup__callme">
+			<h3 class="popup__head">Оставьте свои контакты и мы вам перезвоним</h3>
+			<form action="" class="popup__form">
+				<div class="popup__control">
+					<label for="name" class="popup__label">Представьтесь</label>
+					<input id="name" type="text" required autocomplete="off">
+				</div>
+				<div class="popup__control">
+					<label for="phone" class="popup__label">Номер телефона</label>
+					<input id="phone" type="text" required autocomplete="off">
+				</div>
+				<button type="submit" class="btn popup__submit">Отправить сообщение</button>
+			</form>
 		</div>
-	  </div>
 	</div>
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery.onepage-scroll.js"></script>
+	<script src="./js/jquery.maskedinput.js"></script>
 	<script src="./ajax/material.js"></script>
 	<script src="js/main.js"></script>
 </body>

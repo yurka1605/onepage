@@ -14,6 +14,8 @@ $(document).ready(function() {
         },
     });
 
+    $('#phone').mask('+7 (999) 999 99 99');
+
     $('.page__variant, .page2__variant').on('click', function () {
         $(this).parent().children().each((i, el) => {
             $(el).removeClass('active');
@@ -23,6 +25,27 @@ $(document).ready(function() {
         if($(this).hasClass('page2__variant')) {
             showNextMaterial(this, materials, '.page2');
         }
+    });
+
+    $('.popup__control input').focus(function() {
+        $(this).parent().addClass('focus');
+    });
+
+    $('.popup__control input').blur(function() {
+        if (!$(this).val().trim()) {
+            $(this).parent().removeClass('focus');
+        }
+    });
+    
+    $('.popup__close-btn, .popup-bg').on('click', function (e) {
+        e.preventDefault();
+        $('body').removeClass('popup-on');
+        $('.popup__control input').each((i, el) => $(el).val(''));
+    });
+
+    $('.callme-btn').on('click', function (e) {
+        e.preventDefault();
+        $('body').addClass('popup-on');
     });
 });
 
