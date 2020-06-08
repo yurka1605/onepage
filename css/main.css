@@ -96,15 +96,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 5px solid #f7f7f9;
+    transition: all .5s linear;
 }
 .page2__text {
     width: 50%;
+    min-width: 500px;
     margin-right: 60px;
     color: #fff;
     text-align: right;
     padding: 15px 28px;
     border-right: 1px solid #fff;
     font-size: 46px;
+    transition: all 0.3s linear;
+    transform: translateX(0);
+}
+.page2__text.hide {
+    transform: translateX(110%);
 }
 .page2__text h3 {
     font-size: 60px;
