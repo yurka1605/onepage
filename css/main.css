@@ -5,7 +5,7 @@
 }
 body {
     font-size: 16px;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Circe', sans-serif;
 }
 button {
     cursor: pointer;
@@ -89,43 +89,44 @@ button {
 /* END:HEADER */
 
 /* page2 */
-.main section.page2 {
+.main section.page2, .main section.page5 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
     background-image: url(../images/fon2.png);
-    background-position: top left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 5px solid #f7f7f9;
     transition: all .5s linear;
 }
-.page2__text {
-    width: 50%;
+.page2__text, .page5__text {
+    width: 55%;
     min-width: 500px;
     margin-right: 60px;
     color: #fff;
     text-align: right;
     padding: 15px 28px;
     border-right: 1px solid #fff;
-    font-size: 46px;
+    font-size: 32px;
     transition: all 0.3s linear;
     transform: translateX(0);
 }
-.page2__text.hide {
+.page2__text.hide, .page5__text.hide {
     transform: translateX(110%);
 }
-.page2__text h3 {
-    font-size: 60px;
+.page2__text h3, .page5__text h3 {
+    font-size: 50px;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 40px;
 }
-.page2__text p {
+.page2__text p, .page5__text p {
     margin-bottom: 40px;
+    font-size: 20px;
 }
-.page2__text p:last-child {
+.page2__text p:last-child, .page5__text p:last-child {
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -151,18 +152,18 @@ button {
 }
 .page2__material {
     position: relative;
-    padding: 60px 20px 60px 60px;
+    padding: 50px 20px 50px 60px;
     text-align: left;
-    z-index: 1;   
+    z-index: 1;
 }
-.main section.page2 .page2__material h2 {
+.main section.page2 .page2__material h2, .main section.page5 .page2__material h2 {
     font-weight: 400;
-    font-size: 66px;
+    font-size: 52px;
     text-align: left;
     line-height: 1;
 }
-.main section.page2 .page2__material span {
-    font-size: 45px;
+.main section.page2 .page2__material span, .main section.page5 .page2__material span {
+    font-size: 42px;
     line-height: 1;
 }
 .page2__variants {
@@ -238,7 +239,7 @@ button {
 }
 /* END:page2 */
 
-.page3::before, .page4::before, .page5::before {
+.page3::before, .page4::before, .page6::before {
     content: "";
     position: absolute;
     top: 0;
@@ -274,7 +275,7 @@ button {
 }
 .page__variants {
     position: relative;
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -284,7 +285,7 @@ button {
     margin-bottom: 0;
 }
 .page__variant {
-    width: calc((100% - 80px) / 3);
+    width: calc((100% - 100px) / 3);
     list-style-type: none;
     margin-bottom: 40px;
     cursor: pointer;
@@ -337,6 +338,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1200px;
+	padding: 50px 0;
 }
 .deadlines__item {
     position: relative;
@@ -357,17 +359,17 @@ button {
 }
 .deadlines__item:first-child {
     margin-bottom: 90px;
-    background-image: url(../images/Прямоугольник\ 1@1X.png);
+    background-image: url(../images/1.png);
 }
 .deadlines__item:nth-child(2) {
     margin-bottom: 90px;
-    background-image: url(../images/Прямоугольник\ 2@1X.png);
+    background-image: url(../images/2.png);
 }
 .deadlines__item:nth-child(3) {
-    background-image: url(../images/Прямоугольник\ 3@1X.png);
+    background-image: url(../images/3.png);
 }
 .deadlines__item:last-child {
-    background-image: url(../images/Прямоугольник\ 4@1X.png);
+    background-image: url(../images/4.png);
 }
 .deadlines__item img {
     position: absolute;
@@ -414,6 +416,164 @@ button {
 }
 /* END:page5 */
 
+/* page6 */
+.main section.page6 {
+    justify-content: space-between;
+    background-image: url(../images/fon2.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s linear;
+}
+.page6 {
+	display: flex;
+    padding-top: 80px;
+    padding-bottom: 75px;
+    height: 100%;
+    width: 100%;
+}
+.page6__variants {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	justify-content: center;
+	color: #fff;
+	z-index: 1;
+	padding-left: 150px;
+	width: 40%;
+}
+.page6 ol{
+	counter-reset: myCounter;
+	padding: 40px 0;
+	width: auto;
+}
+.page6__variants li{
+  list-style: none;
+  display: flex;
+}
+.page6__variants li:before {
+	counter-increment: myCounter;
+	content:counter(myCounter);
+	color: #14eeb9;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    float: left;
+    font-size: 50px;
+    line-height: 47px;
+	width: 30px
+}
+.page6__variant {
+	text-align: left;
+}
+.page6__variant div{
+	padding: 10px;
+	float: left;
+}
+.page6__variant h3 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+	color: #fff;
+}
+.page6__variant p {
+	color: #fff;
+}
+.page6__text__wrap {
+	display: flex;
+	flex-direction: column;
+	/* align-items: flex-end; */
+	justify-content: center;
+	width: 100%;
+	color: #fff;
+	z-index: 1;
+}
+.page6__text {
+    min-width: 500px;
+    /* margin-right: 60px; */
+    color: #fff;
+    text-align: left;
+    padding: 15px 200px;
+    /*border-right: 1px solid #fff;*/
+    font-size: 32px;
+    transition: all 0.3s linear;
+    transform: translateX(0);
+}
+.page6__text h3 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 100px;
+    text-align: right;
+}
+.page6__text p {
+    padding: 0;
+    font-size: 18px;
+}
+.page6__text .title {
+	text-align: center;
+	font-size: 28px;
+	width: 65%;
+	margin: 50px auto;
+}
+.page6__text .awards{
+	text-align: center;
+}
+.page6__text .awards img{
+	width: calc((100% - 100px) / 6);
+    padding: 20px;
+}
+.main section.page7 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/fon2.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s linear;
+}
+.page7__contacts {
+	display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    color: #fff;
+    z-index: 1;
+    padding-left: 150px;
+    width: 40%;
+}
+.page7__text {
+	min-width: 500px;
+    color: #fff;
+    text-align: left;
+    padding: 30px 0;
+    font-size: 32px;
+    transition: all 0.3s linear;
+    transform: translateX(0);
+}
+.page7__text h3 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+.page7__text__wrap{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	padding-right: 150px;
+	z-index: 1;
+}
+.balloon {
+    line-height: 150%;
+    font-size: 14px;
+}
+.balloon a{
+	color: #000;
+}
 /* popup */
 body.popup-on {
     overflow: hidden;
@@ -553,24 +713,23 @@ body.popup-on .popup-bg {
     .main-menu {
         padding: 0 40px;
     }
-    .page2__text h3 {
+    .page2__text h3, .page5__text h3 {
         font-size: 40px;
     }
-    .page2__text {
-        font-size: 26px;
+    .page2__text, .page5__text {
+        font-size: 18px;
     }
-    .main section.page2 .page2__material h2 {
+    .main section.page2 .page2__material h2, .main section.page5 .page2__material h2 {
         font-size: 40px;
     }
-    .main section.page2 .page2__material span {
+    .main section.page2 .page2__material span, .main section.page5 .page2__material span {
         font-size: 30px;
     }
     .page2__variant {
         width: 142px;
         margin-right: -43px;
     }
-    .main section.page3,
-    .page5 {
+    .main section.page3 {
         padding: 50px 14%;
     }
     .page__variants {
@@ -622,13 +781,27 @@ body.popup-on .popup-bg {
     .page2__variant_name {
         font-size: 20px;
     }
+	.page6__text h3 {
+		margin-bottom: 20px;
+	}
+	.page6__text p {
+		padding: 0;
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.page6__text .title {
+		text-align: center;
+		font-size: 18px;
+		width: 100%;
+		margin: 25px auto;
+	}
 }
 
 @media (max-width: 1300px) {
-    .main section.page2 .page2__material h2 {
+    .main section.page2 .page2__material h2, .main section.page5 .page2__material h2 {
         font-size: 36px;
     }
-    .main section.page2 .page2__material span {
+    .main section.page2 .page2__material span, .main section.page5 .page2__material span {
         font-size: 26px;
     }
     .page2__material {

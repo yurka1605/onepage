@@ -1,239 +1,239 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-        url('../fonts/Gilroy-Regular.woff') format('woff'),
-        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Regular.eot');
+    src: local('Circe Regular'), local('Circe-Regular'),
+        url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Regular.woff2') format('woff2'),
+        url('../fonts/Circe-Regular.woff') format('woff'),
+        url('../fonts/Circe-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-ExtraboldItalic.eot');
-    src: local('Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
-        url('../fonts/Gilroy-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-ExtraboldItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-ExtraboldItalic.woff') format('woff'),
-        url('../fonts/Gilroy-ExtraboldItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-ExtraboldItalic.eot');
+    src: local('Circe Extrabold Italic'), local('Circe-ExtraboldItalic'),
+        url('../fonts/Circe-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-ExtraboldItalic.woff2') format('woff2'),
+        url('../fonts/Circe-ExtraboldItalic.woff') format('woff'),
+        url('../fonts/Circe-ExtraboldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Bold.eot');
-    src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-        url('../fonts/Gilroy-Bold.woff') format('woff'),
-        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Bold.eot');
+    src: local('Circe Bold'), local('Circe-Bold'),
+        url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Bold.woff2') format('woff2'),
+        url('../fonts/Circe-Bold.woff') format('woff'),
+        url('../fonts/Circe-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Black.eot');
-    src: local('Gilroy Black'), local('Gilroy-Black'),
-        url('../fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Black.woff2') format('woff2'),
-        url('../fonts/Gilroy-Black.woff') format('woff'),
-        url('../fonts/Gilroy-Black.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Black.eot');
+    src: local('Circe Black'), local('Circe-Black'),
+        url('../fonts/Circe-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Black.woff2') format('woff2'),
+        url('../fonts/Circe-Black.woff') format('woff'),
+        url('../fonts/Circe-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Light.eot');
-    src: local('Gilroy Light'), local('Gilroy-Light'),
-        url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Light.woff2') format('woff2'),
-        url('../fonts/Gilroy-Light.woff') format('woff'),
-        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Light.eot');
+    src: local('Circe Light'), local('Circe-Light'),
+        url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Light.woff2') format('woff2'),
+        url('../fonts/Circe-Light.woff') format('woff'),
+        url('../fonts/Circe-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Semibold.eot');
-    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
-        url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
-        url('../fonts/Gilroy-Semibold.woff') format('woff'),
-        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Semibold.eot');
+    src: local('Circe Semibold'), local('Circe-Semibold'),
+        url('../fonts/Circe-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Semibold.woff2') format('woff2'),
+        url('../fonts/Circe-Semibold.woff') format('woff'),
+        url('../fonts/Circe-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Medium.eot');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-        url('../fonts/Gilroy-Medium.woff') format('woff'),
-        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Medium.eot');
+    src: local('Circe Medium'), local('Circe-Medium'),
+        url('../fonts/Circe-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Medium.woff2') format('woff2'),
+        url('../fonts/Circe-Medium.woff') format('woff'),
+        url('../fonts/Circe-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-MediumItalic.eot');
-    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
-        url('../fonts/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-MediumItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-MediumItalic.woff') format('woff'),
-        url('../fonts/Gilroy-MediumItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-MediumItalic.eot');
+    src: local('Circe Medium Italic'), local('Circe-MediumItalic'),
+        url('../fonts/Circe-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Circe-MediumItalic.woff') format('woff'),
+        url('../fonts/Circe-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-BlackItalic.eot');
-    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
-        url('../fonts/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-BlackItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-BlackItalic.woff') format('woff'),
-        url('../fonts/Gilroy-BlackItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-BlackItalic.eot');
+    src: local('Circe Black Italic'), local('Circe-BlackItalic'),
+        url('../fonts/Circe-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Circe-BlackItalic.woff') format('woff'),
+        url('../fonts/Circe-BlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-UltraLight.eot');
-    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
-        url('../fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-UltraLight.woff2') format('woff2'),
-        url('../fonts/Gilroy-UltraLight.woff') format('woff'),
-        url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-UltraLight.eot');
+    src: local('Circe UltraLight'), local('Circe-UltraLight'),
+        url('../fonts/Circe-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-UltraLight.woff2') format('woff2'),
+        url('../fonts/Circe-UltraLight.woff') format('woff'),
+        url('../fonts/Circe-UltraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-RegularItalic.eot');
-    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
-        url('../fonts/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-RegularItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-RegularItalic.woff') format('woff'),
-        url('../fonts/Gilroy-RegularItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-RegularItalic.eot');
+    src: local('Circe Regular Italic'), local('Circe-RegularItalic'),
+        url('../fonts/Circe-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-RegularItalic.woff2') format('woff2'),
+        url('../fonts/Circe-RegularItalic.woff') format('woff'),
+        url('../fonts/Circe-RegularItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-SemiboldItalic.eot');
-    src: local('Gilroy Semibold Italic'), local('Gilroy-SemiboldItalic'),
-        url('../fonts/Gilroy-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-SemiboldItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-SemiboldItalic.woff') format('woff'),
-        url('../fonts/Gilroy-SemiboldItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-SemiboldItalic.eot');
+    src: local('Circe Semibold Italic'), local('Circe-SemiboldItalic'),
+        url('../fonts/Circe-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/Circe-SemiboldItalic.woff') format('woff'),
+        url('../fonts/Circe-SemiboldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-HeavyItalic.eot');
-    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
-        url('../fonts/Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-HeavyItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-HeavyItalic.woff') format('woff'),
-        url('../fonts/Gilroy-HeavyItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-HeavyItalic.eot');
+    src: local('Circe Heavy Italic'), local('Circe-HeavyItalic'),
+        url('../fonts/Circe-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/Circe-HeavyItalic.woff') format('woff'),
+        url('../fonts/Circe-HeavyItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Extrabold.eot');
-    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
-        url('../fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
-        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
-        url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Extrabold.eot');
+    src: local('Circe Extrabold'), local('Circe-Extrabold'),
+        url('../fonts/Circe-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Extrabold.woff2') format('woff2'),
+        url('../fonts/Circe-Extrabold.woff') format('woff'),
+        url('../fonts/Circe-Extrabold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-BoldItalic.eot');
-    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
-        url('../fonts/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-BoldItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-BoldItalic.woff') format('woff'),
-        url('../fonts/Gilroy-BoldItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-BoldItalic.eot');
+    src: local('Circe Bold Italic'), local('Circe-BoldItalic'),
+        url('../fonts/Circe-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Circe-BoldItalic.woff') format('woff'),
+        url('../fonts/Circe-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-UltraLightItalic.eot');
-    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
-        url('../fonts/Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-UltraLightItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-UltraLightItalic.woff') format('woff'),
-        url('../fonts/Gilroy-UltraLightItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-UltraLightItalic.eot');
+    src: local('Circe UltraLight Italic'), local('Circe-UltraLightItalic'),
+        url('../fonts/Circe-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-UltraLightItalic.woff2') format('woff2'),
+        url('../fonts/Circe-UltraLightItalic.woff') format('woff'),
+        url('../fonts/Circe-UltraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-LightItalic.eot');
-    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
-        url('../fonts/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-LightItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-LightItalic.woff') format('woff'),
-        url('../fonts/Gilroy-LightItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-LightItalic.eot');
+    src: local('Circe Light Italic'), local('Circe-LightItalic'),
+        url('../fonts/Circe-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-LightItalic.woff2') format('woff2'),
+        url('../fonts/Circe-LightItalic.woff') format('woff'),
+        url('../fonts/Circe-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Heavy.eot');
-    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
-        url('../fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Heavy.woff2') format('woff2'),
-        url('../fonts/Gilroy-Heavy.woff') format('woff'),
-        url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Heavy.eot');
+    src: local('Circe Heavy'), local('Circe-Heavy'),
+        url('../fonts/Circe-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Heavy.woff2') format('woff2'),
+        url('../fonts/Circe-Heavy.woff') format('woff'),
+        url('../fonts/Circe-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Thin.eot');
-    src: local('Gilroy Thin'), local('Gilroy-Thin'),
-        url('../fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Thin.woff2') format('woff2'),
-        url('../fonts/Gilroy-Thin.woff') format('woff'),
-        url('../fonts/Gilroy-Thin.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Thin.eot');
+    src: local('Circe Thin'), local('Circe-Thin'),
+        url('../fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Thin.woff2') format('woff2'),
+        url('../fonts/Circe-Thin.woff') format('woff'),
+        url('../fonts/Circe-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-ThinItalic.eot');
-    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
-        url('../fonts/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-ThinItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-ThinItalic.woff') format('woff'),
-        url('../fonts/Gilroy-ThinItalic.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('../fonts/Circe-ThinItalic.eot');
+    src: local('Circe Thin Italic'), local('Circe-ThinItalic'),
+        url('../fonts/Circe-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Circe-ThinItalic.woff') format('woff'),
+        url('../fonts/Circe-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }

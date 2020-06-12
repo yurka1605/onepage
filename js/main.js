@@ -16,14 +16,25 @@ $(document).ready(function() {
 
     $('#phone').mask('+7 (999) 999 99 99');
 
-    $('.page__variant, .page2__variant').on('click', function () {
+    $('.materials1').on('click', function () {
         $(this).parent().children().each((i, el) => {
             $(el).removeClass('active');
         });
         $(this).addClass('active');
        
-        if($(this).hasClass('page2__variant')) {
-            showNextMaterial(this, materials, '.page2');
+        if($(this).hasClass('materials1')) {
+            showNextMaterial(this, materials1, '.page2');
+        }
+    });
+
+    $('.materials2').on('click', function () {
+        $(this).parent().children().each((i, el) => {
+            $(el).removeClass('active');
+        });
+        $(this).addClass('active');
+       
+        if($(this).hasClass('materials2')) {
+            showNextMaterial(this, materials2, '.page5');
         }
     });
 
@@ -43,7 +54,7 @@ $(document).ready(function() {
         $('.popup__control input').each((i, el) => $(el).val(''));
     });
 
-    $('.callme-btn').on('click', function (e) {
+    $('button.callme-btn').on('click', function (e) {
         e.preventDefault();
         $('body').addClass('popup-on');
     });
@@ -54,6 +65,7 @@ function showNextMaterial(selector, variants, wrapSelector) {
     var currentData = variants[num];
     var templateText = `<h3>${ currentData.title }</h3>`;
     currentData.text.forEach(p => templateText += `<p>${p}</p>`);
+    templateText += `<button class="btn callme-btn">Заказать звонок</button>`;
     $(wrapSelector).css('background-image', `url(./images/${ currentData.img })`);
     $(`${ wrapSelector }__text`).addClass('hide');
     setTimeout(() => {

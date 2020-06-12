@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<title>LEIGHT - cамый инновационный кухонный бренд</title>
 	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta name="author" content="Litvinov Yuriy">
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/fonts.css" rel="stylesheet">
 	<link href="css/onepage-scroll.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
 </head>
 <body class="mobile-onepage-scroll">
 	<main class="wrapper">
@@ -25,16 +25,15 @@
 						</div>
 					</div>
 					<div class="header__right">
-						<img src="./images/expirience.png" alt="logo-2">
+						<img src="./images/expirience.png" alt="logo-2" style="width: 150px;margin-right: 20px;">
 						<nav class="header__navigation">
 							<ul class="main-menu">
-								<li><a href="#">Материалы</a></li>
-								<li><a href="#" class="active">Наполнение</a></li>
-								<li><a href="#">Сроки</a></li>
-								<li><a href="#">Каталоги</a></li>
-								<li><a href="#">Как заказать</a></li>
-								<li><a href="#">О нас</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="#2" data-index="2">Материалы</a></li>
+								<li><a href="#3" data-index="3" class="active">Наполнение</a></li>
+								<li><a href="#4" data-index="4">Сроки</a></li>
+								<li><a href="#5" data-index="5">Наши работы</a></li>
+								<li><a href="#6" data-index="6">О нас</a></li>
+								<li><a href="#7" data-index="7">Контакты</a></li>
 							</ul>
 						</nav>
 						<button class="btn callme-btn">Заказать звонок</button>
@@ -42,7 +41,7 @@
 				</header>
 				<img class="page1__sloy" src="images/page-1-sloy.png">
 			</section>
-	    
+
 			<section class="page2">
 				<div class="page2__text__wrap">
 					<div class="page2__text">
@@ -50,8 +49,10 @@
 						<p>Основное преимущество этого покрытия
 						состоит в том, что оно вот такое и такое,
 						а самое главное - вот такое</p>
-						<p>От 100’000 рублей за квадрат</p> 
-					</div>	
+						<p>От 100’000 рублей за квадрат</p>
+						<p style="margin-top: 50px;">т 100’000 рублей за квадрат</p>
+						<button class="btn callme-btn">Узнать подробнее</button>
+					</div>
 				</div>
 				<div class="page2__bottom">
 					<div class="page2__material">
@@ -59,34 +60,34 @@
 						<span>вашей новой кухни</span>
 					</div>
 					<div class="page2__variants">
-						<div data-num="0" class="page2__variant">
-							<div class="page2__variant_name">Стекло</div>
-						</div>				  
-						<div data-num="1" class="page2__variant">
-							<div class="page2__variant_name">Дерево</div>
-						</div>			  
-						<div data-num="2" class="page2__variant active">
-							<div class="page2__variant_name">Камень</div>
-						</div>			 
-						<div data-num="3" class="page2__variant">
-							<div class="page2__variant_name">Пластик</div>
+						<div data-num="0" class="page2__variant materials1">
+							<div class="page2__variant_name">Ламинат</div>
 						</div>
-						<div data-num="4" class="page2__variant">
-							<div class="page2__variant_name">Дерево</div>
-						</div>				  
-						<div data-num="5" class="page2__variant">
+						<div data-num="1" class="page2__variant materials1">
+							<div class="page2__variant_name">Шпон</div>
+						</div>
+						<div data-num="2" class="page2__variant materials1 active">
 							<div class="page2__variant_name">Стекло</div>
-						</div>			  
-						<div data-num="6" class="page2__variant">
+						</div>
+						<div data-num="3" class="page2__variant materials1">
+							<div class="page2__variant_name">Бетон</div>
+						</div>
+						<div data-num="4" class="page2__variant materials1">
 							<div class="page2__variant_name">Камень</div>
-						</div>			 
-						<div data-num="7" class="page2__variant">
-							<div class="page2__variant_name">Пластик</div>
+						</div>
+						<div data-num="5" class="page2__variant materials1">
+							<div class="page2__variant_name">Металл</div>
+						</div>
+						<div data-num="6" class="page2__variant materials1">
+							<div class="page2__variant_name">Керамика</div>
+						</div>
+						<div data-num="7" class="page2__variant materials1">
+							<div class="page2__variant_name">Массив</div>
 						</div>
 					</div>
 				</div>
 			</section>
-	    
+
 			<section class="page3">
 				<h2 class="page__title">Возможности для внутреннего наполнения</h2>
 				<ul class="page__variants">
@@ -115,6 +116,7 @@
 						<div class="variant__name">Вариант 6</div>
 					</li>
 				</ul>
+				<button class="btn callme-btn">Узнать подробнее</button>
 			</section>
 			<section class="page4">
 				<h2>Сроки производства</h2>
@@ -156,35 +158,101 @@
 						</p>
 					</div>
 				</div>
+				<button class="btn callme-btn">Связаться с менеджером</button>
 			</section>
 			<section class="page5">
-				<h2 class="page__title">Каталоги кухонь LEICHT</h2>
-				<ul class="page__variants">
-					<li class="page__variant">
-						<img src="./images/page5-item-1.png" alt="variant">
-						<div class="variant__name">Вариант 1</div>
-					</li>
-					<li class="page__variant">
-						<img src="./images/page5-item-2.png" alt="variant">
-						<div class="variant__name">Вариант 2</div>
-					</li>
-					<li class="page__variant">
-						<img src="./images/page5-item-3.png" alt="variant">
-						<div class="variant__name">Вариант 3</div>
-					</li>
-					<li class="page__variant">
-						<img src="./images/page5-item-4.png" alt="variant">
-						<div class="variant__name">Вариант 4</div>
-					</li>
-					<li class="page__variant">
-						<img src="./images/page5-item-5.png" alt="variant">
-						<div class="variant__name">Вариант 5</div>
-					</li>
-					<li class="page__variant">
-						<img src="./images/page5-item-6.png" alt="variant">
-						<div class="variant__name">Вариант 6</div>
-					</li>
-				</ul>
+				<div class="page2__text__wrap">
+					<div class="page5__text">
+						<h3>Классное покрытие</h3>
+						<p>Основное преимущество этого покрытия
+						состоит в том, что оно вот такое и такое,
+						а самое главное - вот такое</p>
+						<p>От 100’000 рублей за квадрат</p>
+						<p style="margin-top: 50px;">т 100’000 рублей за квадрат</p>
+						<button class="btn callme-btn">Заказать звонок</button>
+					</div>
+				</div>
+				<div class="page2__bottom">
+					<div class="page2__material">
+						<h2>Галерея</h2>
+						<span>выполненных работ</span>
+					</div>
+					<div class="page2__variants">
+						<div data-num="0" class="page2__variant materials2">
+							<div class="page2__variant_name">1</div>
+						</div>
+						<div data-num="1" class="page2__variant materials2">
+							<div class="page2__variant_name">2</div>
+						</div>
+						<div data-num="2" class="page2__variant materials2 active">
+							<div class="page2__variant_name">3</div>
+						</div>
+						<div data-num="3" class="page2__variant materials2">
+							<div class="page2__variant_name">4</div>
+						</div>
+						<div data-num="4" class="page2__variant materials2">
+							<div class="page2__variant_name">5</div>
+						</div>
+						<div data-num="5" class="page2__variant materials2">
+							<div class="page2__variant_name">6</div>
+						</div>
+						<div data-num="6" class="page2__variant materials2">
+							<div class="page2__variant_name">7</div>
+						</div>
+						<div data-num="7" class="page2__variant materials2">
+							<div class="page2__variant_name">8</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page6">
+				<div class="page6__text__wrap">
+					<div class="page6__text">
+						<h3>О нас</h3>
+						
+						<p class="title">Специалисты компании PENTAHOUSE вместе с вами пройдут весь этап создания вашей идеальной кухни  и вашего образа жизни.</p>
+						
+						<p>Все сотрудники нашей команды регулярно проходят обучение на заводе LEICHT  и имеют соответствующие сертификаты. Мы знаем, что делаем.</p>
+
+						<p>Чтобы ваша кухня была идеально смонтирована и выполняла все свои функции, мы выдаем вам техническую документацию 
+						с рекомендациями по выводу коммуникаций.</p>
+
+						<p>Мы осуществляем поэтапный замер (контроль соответствия размеров на каждом этапе ремонта).</p>
+
+						<p>Контролируем, и консультируем на этапе подготовке помещения.</p>
+
+						<p>Осуществляем подключение, настройку и первичный ввод техники в эксплуатацию.</p>
+
+						<p>Обеспечиваем постгарантийное обслуживание.</p>
+						
+						<p class="title">Награды LEICHT и PENTAHOUSE</p>
+						
+						<div class="awards">
+							<img src="images/p6.png">
+							<img src="images/p6.png">
+							<img src="images/p6.png">
+							<img src="images/p6.png">
+							<img src="images/p6.png">
+							<img src="images/p6.png">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page7">
+					<div class="page7__contacts">
+						<div class="page7__text">
+							<h3>Контакты</h3>
+							<p>ул. Островского, 107</p>
+							<p>Казань, РТ, Россия</p>
+							<p>Тел.: +7 800 700-84-67</p>
+						</div>
+						<button class="btn callme-btn">Заказать звонок</button>
+					</div>
+					<div class="page7__text__wrap">
+						<div id="map" style="width: 100%;height: 600px;padding: 20px 0;"></div>
+						<a href="" class="btn callme-btn">3D тур</a>
+						<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/512px-Instagram_font_awesome.svg.png" style="width: 40px;"></a>
+					</div>
 			</section>
 		</div>
     </main>
@@ -211,5 +279,7 @@
 	<script src="./js/jquery.maskedinput.js"></script>
 	<script src="./ajax/material.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+	<script src="js/map.js"></script>
 </body>
 </html>
