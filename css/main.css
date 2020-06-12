@@ -39,6 +39,23 @@ button {
     justify-content: space-between;
     width: 40%;
 }
+.header__contacts {
+    display: flex;
+}
+.header__contacts img {
+    width: 100px;
+    margin-right: 20px;
+}
+.contacts__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+.contacts__links a {
+    color: #00ffc0;
+}
 .page__navigation {
     position: absolute;
     right: 0;
@@ -90,16 +107,37 @@ button {
 
 /* page2 */
 .main section.page2, .main section.page5 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    background-image: url(../images/fon2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-bottom: 5px solid #f7f7f9;
     transition: all .5s linear;
+}
+.page2__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.page2__bg.active {
+    transform: translateX(0);
+    z-index: 0;
+}
+.page2__bg.noactive {
+    transform: translateX(100%);
+    z-index: -1;
+}
+.page2__bg img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-position: center;
 }
 .page2__text, .page5__text {
     width: 55%;
@@ -700,111 +738,4 @@ body.popup-on .popup-bg {
 }
 .onepage-pagination li a.active:before {
     border: 1px solid #00ffc0;
-}
-
-@media (max-width: 1600px) {
-    .main section.page1 h1 {
-        margin-bottom: 30px;
-        font-size: 60px;
-    }
-    .main section.page1 h2 {
-        font-size: 28px;
-    }
-    .main-menu {
-        padding: 0 40px;
-    }
-    .page2__text h3, .page5__text h3 {
-        font-size: 40px;
-    }
-    .page2__text, .page5__text {
-        font-size: 18px;
-    }
-    .main section.page2 .page2__material h2, .main section.page5 .page2__material h2 {
-        font-size: 40px;
-    }
-    .main section.page2 .page2__material span, .main section.page5 .page2__material span {
-        font-size: 30px;
-    }
-    .page2__variant {
-        width: 142px;
-        margin-right: -43px;
-    }
-    .main section.page3 {
-        padding: 50px 14%;
-    }
-    .page__variants {
-        margin-top: 30px;
-    }
-    .variant__name {
-        font-size: 32px;
-        margin-top: 20px;
-    }
-    .page__variant {
-        width: calc((100% - 100px) / 3);
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    .page__variant img {
-        max-height: 180px;
-        width: auto;
-    }
-    .page4 {
-        padding: 50px 80px 50px 14%;
-    }
-    .page4 h2 {
-        font-size: 45px;
-        max-width: 1000px;
-        padding-right: 9%;
-    }
-    .deadlines {
-        max-width: 1000px;
-    }
-    .deadlines__item {
-        width: 300px;
-        height: 150px;
-    }
-    .deadlines__item:nth-child(2n) {
-        width: 420px;
-    }
-    .deadlines__title {
-        font-size: 50px;
-        margin-top: -26px;
-    }
-    .deadlines__text {
-        font-size: 20px;
-        padding-bottom: 15px;
-    }
-    .deadlines__item img {
-        height: 80px;
-        width: auto;
-    }
-    .page2__variant_name {
-        font-size: 20px;
-    }
-	.page6__text h3 {
-		margin-bottom: 20px;
-	}
-	.page6__text p {
-		padding: 0;
-		font-size: 15px;
-		margin-bottom: 10px;
-	}
-	.page6__text .title {
-		text-align: center;
-		font-size: 18px;
-		width: 100%;
-		margin: 25px auto;
-	}
-}
-
-@media (max-width: 1300px) {
-    .main section.page2 .page2__material h2, .main section.page5 .page2__material h2 {
-        font-size: 36px;
-    }
-    .main section.page2 .page2__material span, .main section.page5 .page2__material span {
-        font-size: 26px;
-    }
-    .page2__material {
-        padding: 40px 0px 40px 40px;
-    }
 }

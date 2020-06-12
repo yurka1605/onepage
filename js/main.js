@@ -66,9 +66,17 @@ function showNextMaterial(selector, variants, wrapSelector) {
     var templateText = `<h3>${ currentData.title }</h3>`;
     currentData.text.forEach(p => templateText += `<p>${p}</p>`);
     templateText += `<button class="btn callme-btn">Заказать звонок</button>`;
-    $(wrapSelector).css('background-image', `url(./images/${ currentData.img })`);
+    $(`${ wrapSelector }__bg:not(.active) img`).prop('src', `./images/${ currentData.img }`);
+    $(`${ wrapSelector }__bg`).each((i, el) => {
+        if ($(el).hasClass('active')) {
+            $(el).addClass('noactive'); 
+        }
+
+        $(el).toggleClass('active');
+    });
     $(`${ wrapSelector }__text`).addClass('hide');
     setTimeout(() => {
+        $(`${ wrapSelector }__bg.noactive`).removeClass('noactive');
         $(`${ wrapSelector }__text`).removeClass('hide');
         $(`${ wrapSelector }__text`).html(templateText);
     }, 300);
