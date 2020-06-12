@@ -433,10 +433,10 @@ button {
 /* page5 */
 .page5 {
     position: relative;
-    background-image: url(../images/mramor.png);
+    /* background-image: url(../images/mramor.png);
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -451,6 +451,30 @@ button {
     font-size: 50px;
     text-align: center;
     line-height: 1;
+}
+.page5__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.page5__bg.active {
+    transform: translateX(0);
+    z-index: 0;
+}
+.page5__bg.noactive {
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.page5__bg img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-position: center;
 }
 /* END:page5 */
 

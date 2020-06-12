@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     $('#phone').mask('+7 (999) 999 99 99');
 
-    $('.materials1').on('click', function () {
+    $('.page2__variant').on('click', function () {
         $(this).parent().children().each((i, el) => {
             $(el).removeClass('active');
         });
@@ -25,13 +25,6 @@ $(document).ready(function() {
         if($(this).hasClass('materials1')) {
             showNextMaterial(this, materials1, '.page2');
         }
-    });
-
-    $('.materials2').on('click', function () {
-        $(this).parent().children().each((i, el) => {
-            $(el).removeClass('active');
-        });
-        $(this).addClass('active');
        
         if($(this).hasClass('materials2')) {
             showNextMaterial(this, materials2, '.page5');
