@@ -17,6 +17,10 @@ $(document).ready(function() {
     $('#phone').mask('+7 (999) 999 99 99');
 
     $('.page2__variant').on('click', function () {
+        if ($(this).hasClass('active')) {
+            return;
+        }
+        
         $(this).parent().children().each((i, el) => {
             $(el).removeClass('active');
         });
