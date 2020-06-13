@@ -217,6 +217,7 @@ button {
     height: inherit;
     margin-right: -53px;
     cursor: pointer;
+    user-select: none;
 }
 .page2__variant::before {
     content: "";
@@ -331,6 +332,7 @@ button {
 .page__variant img {
     height: auto;
     width: 100%;
+    max-width: 100%;
     max-height: 258px;
     box-shadow: 0px 2px 14px 3px rgba(0,0,0,0.75);
 }
