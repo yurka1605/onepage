@@ -13,7 +13,7 @@
 	  width: 100%;
 	  height: 100%;
 	}
-	
+
 	a {
 		color: #fff;
 	}
@@ -54,7 +54,7 @@
 	  width: 4px;
 	  height: 4px;
 	  display: block;
-	  
+
 	}
 	.onepage-pagination li a:before{
 	  content: '';
@@ -89,19 +89,19 @@
       height: 100%;
       -webkit-font-smoothing: antialiased;
     }
-    
+
     .wrapper {
     	height: 100% !important;
     	height: 100%;
-    	margin: 0 auto; 
+    	margin: 0 auto;
     	overflow: hidden;
     }
-    
+
     a {
       text-decoration: none;
     }
-    
-    
+
+
     h1, h2 {
       width: 100%;
       float: left;
@@ -133,7 +133,7 @@
       margin-top: 0;
       margin-bottom: 10px;
     }
-    
+
     .pointer {
       color: #9b59b6;
       font-family: 'Pacifico', cursive;
@@ -170,7 +170,7 @@
       width: 100%;
       margin: 0 auto;
     }
-    
+
     .main h1 {
       padding:150px 50px;
       float: left;
@@ -183,11 +183,11 @@
       color: white;
       margin: 0;
     }
-   
+
     .main h1.demo1 {
       background: #1ABC9C;
     }
-    
+
     .reload.bell {
       font-size: 12px;
       padding: 20px;
@@ -198,19 +198,18 @@
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
     }
-    
+
     .reload.bell #notification {
       font-size: 25px;
       line-height: 140%;
     }
-    
+
     .reload, .btn{
       display: inline-block;
-      border: 4px solid #A2261E;
+      border: 1px solid ##0bbbbe;
       border-radius: 5px;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
-      background: #CC3126;
       display: inline-block;
       line-height: 100%;
       padding: 0.7em;
@@ -226,11 +225,15 @@
       background: #444;
     }
     .btn {
-      width: 200px;
-      color: #14eeb9;
-      border: 2px solid #14eeb9;
-      border-radius: 12px;
-      background: rgba(3, 3, 3, 0.75);
+			box-shadow: 0px 7px 10px -9px #276873;
+	border: 4px solid #0bbbbe;
+	border-radius:18px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
     }
     .clear {
       width: auto;
@@ -255,7 +258,7 @@
       font-weight: bold;
       text-align: center;
     }
-    
+
     .back {
       position: absolute;
       top: 0;
@@ -280,7 +283,7 @@
       color: black;
       background: rgba(255, 255, 255, 0.5);
     }
-    
+
     header {
       position: relative;
       z-index: 10;
@@ -295,14 +298,14 @@
     .main section  {
       overflow: hidden;
     }
-    
+
     .main section > img {
       position: absolute;
       max-width: 100%;
       z-index: 1;
       right: 0;
     }
-    
+
     .main section.page1 {
       background: url("../images/fon.jpg");
 	  background-position: center;
@@ -326,12 +329,6 @@
     }
     .main section .page_container .btns a{
       text-align: center;
-    }
-    .main section.page2 > img {
-      position: absolute;
-      top: -300px;
-      left: 50%;
-      margin-left: -1095px;
     }
     .main section.page2 .page_container {
       margin-top: 240px;
@@ -378,7 +375,7 @@
       font-weight: 100;
       font-size: 21px;
     }
-	  
+
 body .one .bsa_it_ad { background: transparent; border: none; font-family: inherit; padding: 0 15px 0 10px; margin: 0; text-align: center; }
 body .one .bsa_it_ad:hover img { -moz-box-shadow: 0 0 3px #000; -webkit-box-shadow: 0 0 3px #000; box-shadow: 0 0 3px #000; }
 body .one .bsa_it_ad .bsa_it_i { display: block; padding: 0; float: none; margin: 0 0 5px; }
@@ -483,7 +480,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
 .socials .twitter-share-button {
   width: 85px  !important;
 }
-	  
+
 #carbonads {
   --width: 180px;
   --font-size: 14px;
@@ -555,12 +552,12 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
 	  top: auto !important;
 	  left: auto !important;
 	}
-	
+
     body.mobile-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
       /*height: auto;*/
     }
-    
+
     body.mobile-onepage-scroll .main section .page_container, body.mobile-onepage-scroll .main section.page3 .page_container  {
       padding: 20px;
       margin-top: 150px;
@@ -568,7 +565,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
-    
+
     body.mobile-onepage-scroll  section .page_container h1{
       text-align: center;
       font-size: 50px;
@@ -577,13 +574,13 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
       text-align: center;
       width: 100%;
     }
-    
+
     body.mobile-onepage-scroll .main section.page1 > img {
       position: absolute;
       width: 80%;
       left: 10%;
     }
-    
+
     body.mobile-onepage-scroll .main section > img {
       position: relative;
       max-width: 80%;
@@ -595,19 +592,19 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
       float: none;
       overflow: hidden;
     }
-    
+
     body.mobile-onepage-scroll .main section.page3 .page_container {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
       right: 0;
     }
-	
+
 	.header__right{
 		display: none;
 	}
 	.header__left{
-		
+
 	}
 }
 

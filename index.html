@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -9,6 +10,8 @@
 	<link href="css/onepage-scroll.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/media.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body class="mobile-onepage-scroll">
 	<main class="wrapper">
@@ -16,8 +19,8 @@
 			<section class="page1">
 				<header class="header page__container">
 					<div class="header__left">
-						<a href="#" class="header__logo">
-							<img src="images/logo.png">
+						<a href="index.html" class="header__logo">
+							<img src="images/expirience.png">
 						</a>
 						<div class="page1__text">
 							<h1>Самый инновационный<br>кухонный бренд</h1>
@@ -30,19 +33,20 @@
 								<a href="tel:89299999999" class="header__phone">8 (929) 999-99-99</a>
 								<a href="mailto:penta__house@gmail.com" class="header__phone">penta__house@gmail.com</a>
 							</div>
-							<img src="./images/expirience.png" alt="logo-2">
+							<img src="./images/logo.png" alt="logo-2">
 						</div>
 						<nav class="header__navigation">
 							<ul class="main-menu">
 								<li><a href="#2" data-index="2">Материалы</a></li>
 								<li><a href="#3" data-index="3" class="active">Наполнение</a></li>
-								<li><a href="#4" data-index="4">Сроки</a></li>
-								<li><a href="#5" data-index="5">Наши работы</a></li>
-								<li><a href="#6" data-index="6">О нас</a></li>
-								<li><a href="#7" data-index="7">Контакты</a></li>
+								<li><a href="#4" data-index="4">Техника</a></li>
+								<li><a href="#5" data-index="5">Сроки</a></li>
+								<li><a href="#6" data-index="6">Наши работы</a></li>
+								<li><a href="#7" data-index="7">О нас</a></li>
+								<li><a href="#7" data-index="8">Контакты</a></li>
 							</ul>
 						</nav>
-						<button class="btn callme-btn">Заказать звонок</button>
+						<button id="popup1" class="btn callme-btn">Заказать звонок</button>
 					</div>
 				</header>
 				<img class="page1__sloy" src="images/page-1-sloy.png">
@@ -50,20 +54,18 @@
 
 			<section class="page2">
 				<div class="page2__bg active">
-					<img src="./images/fon2.png" alt="background">
+					<img src="./images/shpon.jpg" alt="background">
 				</div>
 				<div class="page2__bg">
-					<img src="./images/fon2.png" alt="background">
+					<img src="./images/shpon.jpg" alt="background">
 				</div>
 				<div class="page2__text__wrap">
 					<div class="page2__text">
-						<h3>Классное покрытие</h3>
-						<p>Основное преимущество этого покрытия
-						состоит в том, что оно вот такое и такое,
-						а самое главное - вот такое</p>
-						<p>От 100’000 рублей за квадрат</p>
-						<p class="last-text" style="margin-top: 50px;">т 100’000 рублей за квадрат</p>
-						<button class="btn callme-btn">Узнать подробнее</button>
+						<h3>Шпон натуральный</h3>
+						<p>Фасады из натурального шпона. </br> Доступно более 20 различных вариантов.</br> В числе лидеров, конечно, орех и дуб. Поверхность защищена дополнительным слоем лака. </br> Подбор рисунка уникален, используются только ценные породы.</p>
+						<p>От 1'512'000 рублей за готовую кухню (включая сборку и доставку)</p>
+						<p class="last-text">Доступен как в натуральном, так и в искусственном материале</p>
+						<button id="popup1" class="btn callme-btn">Узнать подробнее</button>
 					</div>
 				</div>
 				<div class="page2__bottom">
@@ -72,32 +74,33 @@
 						<span>вашей новой кухни</span>
 					</div>
 					<div class="page2__variants">
-						<div data-num="0" class="page2__variant materials1">
-							<div class="page2__variant_name">Ламинат</div>
-						</div>
-						<div data-num="1" class="page2__variant materials1">
-							<div class="page2__variant_name">Шпон</div>
-						</div>
-						<div data-num="2" class="page2__variant materials1 active">
-							<div class="page2__variant_name">Стекло</div>
-						</div>
-						<div data-num="3" class="page2__variant materials1">
-							<div class="page2__variant_name">Бетон</div>
-						</div>
-						<div data-num="4" class="page2__variant materials1">
-							<div class="page2__variant_name">Камень</div>
-						</div>
-						<div data-num="5" class="page2__variant materials1">
-							<div class="page2__variant_name">Металл</div>
-						</div>
-						<div data-num="6" class="page2__variant materials1">
-							<div class="page2__variant_name">Керамика</div>
-						</div>
-						<div data-num="7" class="page2__variant materials1">
-							<div class="page2__variant_name">Массив</div>
+					  <div data-num="0" class="page2__variant materials1">
+					    <div class="page2__variant_name">Ламинат</div>
+					  </div>
+					  <div data-num="1" class="page2__variant materials1">
+					    <div class="page2__variant_name">Лак</div>
+					  </div>
+					  <div data-num="2" class="page2__variant materials1 active">
+					    <div class="page2__variant_name">Шпон</div>
+					  </div>
+					  <div data-num="3" class="page2__variant materials1">
+					    <div class="page2__variant_name">Стекло</div>
+					  </div>
+					  <div data-num="4" class="page2__variant materials1">
+					    <div class="page2__variant_name">Бетон</div>
+					  </div>
+					  <div data-num="5" class="page2__variant materials1">
+					    <div class="page2__variant_name">Камень</div>
+					  </div>
+					  <div data-num="6" class="page2__variant materials1">
+					    <div class="page2__variant_name">Металл</div>
+					  </div>
+					  <div data-num="7" class="page2__variant materials1">
+					    <div class="page2__variant_name">Алюминий</div>
 						</div>
 					</div>
 				</div>
+				<img class="page1__sloy" src="images/page-2-sloy.png">
 			</section>
 
 			<section class="page3">
@@ -105,32 +108,54 @@
 				<ul class="page__variants">
 					<li class="page__variant">
 						<img src="./images/page3-item-1.png" alt="variant">
-						<div class="variant__name">Вариант 1</div>
+						<div class="variant__name">Системы Combo</div>
 					</li>
 					<li class="page__variant">
 						<img src="./images/page3-item-2.png" alt="variant">
-						<div class="variant__name">Вариант 2</div>
+						<div class="variant__name">Шкафы Vero</div>
 					</li>
 					<li class="page__variant">
 						<img src="./images/page3-item-3.png" alt="variant">
-						<div class="variant__name">Вариант 3</div>
+						<div class="variant__name">Ящики Q BOX</div>
 					</li>
 					<li class="page__variant">
 						<img src="./images/page3-item-4.png" alt="variant">
-						<div class="variant__name">Вариант 4</div>
+						<div class="variant__name">Полки</div>
 					</li>
 					<li class="page__variant">
 						<img src="./images/page3-item-5.png" alt="variant">
-						<div class="variant__name">Вариант 5</div>
+						<div class="variant__name">Системы разделения шкафа</div>
 					</li>
 					<li class="page__variant">
 						<img src="./images/page3-item-6.png" alt="variant">
-						<div class="variant__name">Вариант 6</div>
+						<div class="variant__name">Настенные покрытия</div>
 					</li>
 				</ul>
-				<button class="btn callme-btn">Узнать подробнее</button>
+				<button id="popup1" class="btn callme-btn">Узнать подробнее</button>
 			</section>
 			<section class="page4">
+				<div class="page7__text__wrap">
+					<div class="page7__text">
+						<h3 style="text-align: center;">Техника и сантехника</h3>
+
+						<p class="title">Лучшей кухне - лучшая техника. Мы сотрудничаем с ведущими производителями кухонной техники и сантехники</p>
+
+						<div class="awards2">
+							<div><img src="images/tech1.png"></div>
+							<div><img src="images/tech2.png"></div>
+							<div><img src="images/tech3.png"></div>
+						</div>
+
+						<div class="awards2">
+							<div><img src="images/tech4.png"></div>
+							<div><img src="images/tech5.png"></div>
+							<div><img src="images/tech6.png"></div>
+						</div>
+					</div>
+					<button id="popup1" class="btn callme-btn">Подобрать технику</button>
+				</div>
+			</section>
+			<section class="page5">
 				<h2>Сроки производства</h2>
 				<div class="deadlines">
 					<div class="deadlines__item">
@@ -155,7 +180,7 @@
 						<img src="./images/icon-3.png" alt="3">
 						<h3 class="deadlines__title">1 год</h3>
 						<p class="deadlines__text">
-							бусплатное<br>
+							бесплатное<br>
 							техническое<br>
 							обслуживание<br>
 						</p>
@@ -170,24 +195,21 @@
 						</p>
 					</div>
 				</div>
-				<button class="btn callme-btn">Связаться с менеджером</button>
+				<button id="popup2" class="btn callme-btn">Запись на замер</button>
 			</section>
-			<section class="page5">
-				<div class="page5__bg active">
+			<section class="page6">
+				<div class="page6__bg active">
 					<img src="./images/gal3.jpg" alt="background">
 				</div>
-				<div class="page5__bg">
+				<div class="page6__bg">
 					<img src="./images/gal3.jpg" alt="background">
 				</div>
 				<div class="page2__text__wrap">
-					<div class="page5__text">
-						<h3>Классное покрытие</h3>
-						<p>Основное преимущество этого покрытия
-						состоит в том, что оно вот такое и такое,
-						а самое главное - вот такое</p>
-						<p>От 100’000 рублей за квадрат</p>
-						<p class="last-text" style="margin-top: 50px;">т 100’000 рублей за квадрат</p>
-						<button class="btn callme-btn">Заказать звонок</button>
+					<div class="page6__text">
+						<h3>Кухня в г. Гульт, Франция</h3>
+						<p>Материалы фасадов: натуральный шпон и однотонный ламинат, покрытый лаком</br> Описание техники </br> Проект выполнен в традиционном американском стиле – с большим островом нишами для барных стульев – для уютного семейного общения в процессе готовки</p>
+						<p class="last-text"> </p>
+						<button id="popup1" class="btn callme-btn">Хочу такую же</button>
 					</div>
 				</div>
 				<div class="page2__bottom">
@@ -197,98 +219,136 @@
 					</div>
 					<div class="page2__variants">
 						<div data-num="0" class="page2__variant materials2">
-							<div class="page2__variant_name">1</div>
+							<div class="page2__variant_name">США,</br>Остин</div>
 						</div>
 						<div data-num="1" class="page2__variant materials2">
-							<div class="page2__variant_name">2</div>
+							<div class="page2__variant_name">Казань</div>
 						</div>
 						<div data-num="2" class="page2__variant materials2 active">
-							<div class="page2__variant_name">3</div>
+							<div class="page2__variant_name">Франция</div>
 						</div>
 						<div data-num="3" class="page2__variant materials2">
-							<div class="page2__variant_name">4</div>
+							<div class="page2__variant_name">Тайвань</div>
 						</div>
 						<div data-num="4" class="page2__variant materials2">
-							<div class="page2__variant_name">5</div>
+							<div class="page2__variant_name">Австрия</div>
 						</div>
 						<div data-num="5" class="page2__variant materials2">
-							<div class="page2__variant_name">6</div>
+							<div class="page2__variant_name">Германия</div>
 						</div>
 						<div data-num="6" class="page2__variant materials2">
-							<div class="page2__variant_name">7</div>
+							<div class="page2__variant_name">Рио-де-</br>Жанейро</div>
 						</div>
 						<div data-num="7" class="page2__variant materials2">
-							<div class="page2__variant_name">8</div>
+							<div class="page2__variant_name">Сан-</br>Паулу</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="page6">
-				<div class="page6__text__wrap">
-					<div class="page6__text">
-						<h3>О нас</h3>
-						
-						<p class="title">Специалисты компании PENTAHOUSE вместе с вами пройдут весь этап создания вашей идеальной кухни  и вашего образа жизни.</p>
-						
-						<p>Все сотрудники нашей команды регулярно проходят обучение на заводе LEICHT  и имеют соответствующие сертификаты. Мы знаем, что делаем.</p>
-
-						<p>Чтобы ваша кухня была идеально смонтирована и выполняла все свои функции, мы выдаем вам техническую документацию 
-						с рекомендациями по выводу коммуникаций.</p>
-
-						<p>Мы осуществляем поэтапный замер (контроль соответствия размеров на каждом этапе ремонта).</p>
-
-						<p>Контролируем, и консультируем на этапе подготовке помещения.</p>
-
-						<p>Осуществляем подключение, настройку и первичный ввод техники в эксплуатацию.</p>
-
-						<p>Обеспечиваем постгарантийное обслуживание.</p>
-						
-						<p class="title">Награды LEICHT и PENTAHOUSE</p>
-						
-						<div class="awards">
-							<img src="images/p6.png">
-							<img src="images/p6.png">
-							<img src="images/p6.png">
-							<img src="images/p6.png">
-							<img src="images/p6.png">
-							<img src="images/p6.png">
-						</div>
-					</div>
-				</div>
+				<img class="page1__sloy" src="images/page-2-sloy.png">
 			</section>
 			<section class="page7">
-					<div class="page7__contacts">
-						<div class="page7__text">
-							<h3>Контакты</h3>
-							<p>ул. Островского, 107</p>
-							<p>Казань, РТ, Россия</p>
-							<p>Тел.: +7 800 700-84-67</p>
+				<div class="page7__text__wrap">
+					<div class="page7__text">
+						<h3>О нас</h3>
+
+						<p class="title">Специалисты компании PENTAHOUSE вместе с вами пройдут весь этап создания вашей идеальной кухни  и вашего образа жизни.</li>
+						<ul>
+						<li>Все сотрудники нашей команды регулярно проходят обучение на заводе LEICHT  и имеют соответствующие сертификаты. Мы знаем, что делаем.</p>
+
+						<li>Чтобы ваша кухня была идеально смонтирована и выполняла все свои функции, мы выдаем вам техническую документацию
+						с рекомендациями по выводу коммуникаций.</li>
+
+						<li>Контролируем, и консультируем на этапе подготовки помещения.</li>
+
+						<li>Обеспечиваем постгарантийное обслуживание.</li>
+						</ul>
+
+						<p class="title">Награды LEICHT и PENTAHOUSE</p>
+
+						<div class="awards">
+							<div><img src="images/award3.png"><span>Red Dot 2004</span><span>Кухни без ручек "Avance"</span></div>
+							<div><img src="images/award3.png"><span>Red Dot 2009</span><span>Внутренние ящики со стеклянными фасадами</span></div>
+							<div><img src="images/award4.png"><span>Global kitchen design 2017</span><span>№1 Worldwide</span></div>
+							<div><img src="images/award2.png"><span>Design Award 2008</span><span>Система M-Space</span></div>
+							<div><img src="images/award1.png"><span>Interior Innovation Award 2008</span><span>Модель Concept 40</span></div>
+							<div><img src="images/award3.png"><span>Red Dot 2010</span><span>Система угловых шкафов</span></div>
 						</div>
-						<button class="btn callme-btn">Заказать звонок</button>
 					</div>
-					<div class="page7__text__wrap">
-						<div id="map" style="width: 100%;height: 600px;padding: 20px 0;"></div>
+				</div>
+			</section>
+			<section class="page8">
+					<div class="page8__contacts">
+						<div class="page8__text">
+							<h3>Мы ждем Вас в нашем салоне</h3>
+							<p>г. Казань <br>ул. Островского 107</p>
+							<p>Телефон: +7 800 700-84-67<br>Почта: mail@mail.ru</p>
+						</div>
+						<button id="popup1" class="btn callme-btn">Заказать звонок</button>
+						<div class="page8__text">
+							<h3>Находитесь не в Казани?</h3>
+							<p>Ознакомтесь с нашим салоном в интерактивном 3D туре</p>
+						</div>
 						<a href="" class="btn callme-btn">3D тур</a>
-						<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/512px-Instagram_font_awesome.svg.png" style="width: 40px;"></a>
+					</div>
+					<div class="page8__text__wrap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.4770639771075!2d49.1402873792624!3d55.776231798937495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead08818103b7%3A0xb9a8e02536b695bb!2zUGVudGFIb3VzZSwg0L7Qv9GC0L7QstC-LdGA0L7Qt9C90LjRh9C90LDRjyDQutC-0LzQv9Cw0L3QuNGPLCDQv9GA0LXQtNGB0YLQsNCy0LjRgtC10LvRjCBHRVNTSSwgRG9ybmJyYWNodCwgSGFuc2dyb2hl!5e0!3m2!1sru!2sru!4v1592575224045!5m2!1sru!2sru" width="100%" height="600" frameborder="0" style="border:0;box-shadow: 1px 0px #00ffc0, 1px -1px #00ffc0, 2px -1px #00ffc0, 2px -2px #00ffc0, 3px -2px #00ffc0, 3px -3px #00ffc0, 4px -3px #00ffc0, 4px -4px #00ffc0, 5px -4px #00ffc0, 5px -5px #00ffc0, 6px -5px #00ffc0, 6px -6px #00ffc0, 7px -6px #00ffc0, 7px -7px #00ffc0, 8px -7px #00ffc0, 8px -8px #00ffc0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<div style="display: flex; align-items: center; margin-top: 50px;font-size: 25px;color: #f3f2f2;">Наши социальные сети: 
+							<div class="social-btns">
+								<a class="btn instagram" target="_blank" href="https://instagram.com/penta_house?igshid=9d58luora1qd">
+									<i class="fa fa-instagram"></i>
+								</a>
+								<a class="btn facebook" target="_blank" href="https://www.facebook.com/pentahouseofficial/">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a class="btn youtube" target="_blank" href="https://www.youtube.com/channel/UCwTjjoOfZBsTqg7jMDdaYGg/about">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 			</section>
 		</div>
     </main>
 	<div class="popup-bg"></div>
-	<div class="popup">
-		<button class="popup__close-btn">×</button>
+	<div class="popup" id="popup1">
+		<button class="popup__close-btn">x</button>
 		<div class="popup__callme">
 			<h3 class="popup__head">Оставьте свои контакты и мы вам перезвоним</h3>
-			<form action="" class="popup__form">
+			<form action="sendform.php" method="POST" class="popup__form">
 				<div class="popup__control">
 					<label for="name" class="popup__label">Представьтесь</label>
-					<input id="name" type="text" required autocomplete="off">
+					<input id="name" name="name" type="text" required autocomplete="off">
 				</div>
 				<div class="popup__control">
 					<label for="phone" class="popup__label">Номер телефона</label>
-					<input id="phone" type="text" required autocomplete="off">
+					<input id="phone" name="phone" type="text" required autocomplete="off">
 				</div>
-				<button type="submit" class="btn popup__submit">Отправить сообщение</button>
+				<button type="submit" name="submit" class="btn popup__submit">Отправить сообщение</button>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="popup2">
+		<button class="popup__close-btn">x</button>
+		<div class="popup__callme">
+			<h3 class="popup__head">Оставьте свои контакты и мы вам перезвоним</h3>
+			<form action="sendform.php" method="POST" class="popup__form">
+				<div class="popup__control">
+					<label for="name" class="popup__label">Представьтесь</label>
+					<input id="name" name="name" type="text" required autocomplete="off">
+				</div>
+				<div class="popup__control">
+					<label for="date" class="popup__label">Дата</label>
+					<input id="date" name="date" type="text" required autocomplete="off">
+				</div>
+				<div class="popup__control">
+					<label for="adres" class="popup__label">Адрес</label>
+					<input id="adres" name="adres" type="text" required autocomplete="off">
+				</div>
+				<div class="popup__control">
+					<label for="phone" class="popup__label">Номер телефона</label>
+					<input id="phone1" name="phone" type="text" required autocomplete="off">
+				</div>
+				<button type="submit" name="submit" class="btn popup__submit">Отправить сообщение</button>
 			</form>
 		</div>
 	</div>
@@ -298,7 +358,8 @@
 	<script src="./js/jquery.touchSwipe.min.js"></script>
 	<script src="./ajax/material.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
-	<script src="js/map.js"></script>
+	<script src="js/moment-with-locales.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+
 </body>
 </html>

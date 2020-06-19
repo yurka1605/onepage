@@ -3,6 +3,7 @@
 $(document).ready(function() {
     if ($(window).width() < 769) {
         $('.page3').remove();
+        $('.page7').remove();
     }
     $(window).resize(function () {
         location.reload();
@@ -21,6 +22,11 @@ $(document).ready(function() {
     });
 
     $('#phone').mask('+7 (999) 999 99 99');
+    $('#phone1').mask('+7 (999) 999 99 99');
+	$('#date').datetimepicker({
+		locale: 'ru',
+		format: 'DD.MM.YYYY'
+	});
 
     $('.page2__variant').on('click', function () {
         if ($(this).hasClass('active')) {
@@ -35,7 +41,7 @@ $(document).ready(function() {
         if($(this).hasClass('materials1')) {
             showNextMaterial(this, materials1, '.page2');
         } else {
-            showNextMaterial(this, materials2, '.page5');
+            showNextMaterial(this, materials2, '.page6');
         }
     });
 
@@ -51,16 +57,42 @@ $(document).ready(function() {
     
     $('.popup__close-btn, .popup-bg').on('click', function (e) {
         e.preventDefault();
-        $('body').removeClass('popup-on');
+        $('body').removeClass('popup-on1');
+        $('body').removeClass('popup-on2');
         $('.popup__control input').each((i, el) => $(el).val(''));
     });
 
-    $('button.callme-btn').on('click', function (e) {
+    $('button#popup1').on('click', function (e) {
         e.preventDefault();
-        $('body').addClass('popup-on');
+        $('body').addClass('popup-on1');
     });
 
-    $('.page2, .page5').swipe( {
+    $('button#popup2').on('click', function (e) {
+        e.preventDefault();
+        $('body').addClass('popup-on2');
+    });
+	
+	 $(document).on("submit","form", function(){
+		var form = $(this).parents('.main-form');
+	  
+		var method = form.attr('method');
+		var action = form.attr('action');
+		var data = form.serialize();
+	  
+		$.ajax({
+			type: method,
+			url: action,
+			data: data,
+			success: function (data) {
+				document.location.href = "thanks.html?docs";
+			},
+			error: function (data) {
+				document.location.href = "thanks.html?error";
+			}
+		});
+    });
+
+    $('.page2, .page6').swipe( {
         swipeStatus: function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection) {
             if (phase=="end") {
                 //сработает через 20 пикселей то число которое выбрали в threshold
@@ -76,7 +108,7 @@ $(document).ready(function() {
                         var num = $('.materials2.active').data('num');
                         next = num !== 7 ? $('.materials2.active').next() : $('.materials2:first-child');
                         $('.materials2.active').removeClass('active');
-                        showNextMaterial(next, materials2, '.page5');
+                        showNextMaterial(next, materials2, '.page6');
                     }
                     $(next).addClass('active');
                 }
@@ -92,7 +124,7 @@ $(document).ready(function() {
                         var num = $('.materials2.active').data('num');
                         prev = num !== 0 ? $('.materials2.active').prev() : $('.materials2:last-child');
                         $('.materials2.active').removeClass('active');
-                        showNextMaterial(prev, materials2, '.page5');
+                        showNextMaterial(prev, materials2, '.page6');
                     }
                     $(prev).addClass('active');
                 }
@@ -108,7 +140,12 @@ function showNextMaterial(selector, variants, wrapSelector) {
     var currentData = variants[num];
     var templateText = `<h3>${ currentData.title }</h3>`;
     currentData.text.forEach(p => templateText += `<p>${p}</p>`);
-    templateText += `<button class="btn callme-btn">Заказать звонок</button>`;
+	if (wrapSelector == ".page6") {
+		templateText += `<button onclick="$('body').addClass('popup-on1')" class="btn callme-btn" id="popup1">Хочу такую же</button>`;
+	} else {
+		templateText += `<button onclick="$('body').addClass('popup-on1')" class="btn callme-btn" id="popup1">Узнать подробнее</button>`;
+	}
+	
     $(`${ wrapSelector }__bg:not(.active) img`).prop('src', `./images/${ currentData.img }`);
     $(`${ wrapSelector }__bg`).each((i, el) => {
         if ($(el).hasClass('active')) {
