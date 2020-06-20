@@ -130,8 +130,8 @@ $(document).ready(function() {
                 }
             }
         },
-        triggerOnTouchEnd: false,
-        threshold: 20 // сработает через 20 пикселей
+        triggerOnTouchLeave: true,
+        threshold: 0 // сработает через 20 пикселей
     });
 });
 
