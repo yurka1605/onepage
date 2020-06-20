@@ -28,7 +28,7 @@ $(document).ready(function() {
 		format: 'DD.MM.YYYY'
 	});
 
-    $('.page2__variant').on('click', function () {
+    $('.page2__variant').on('click touchstart', function () {
         if ($(this).hasClass('active')) {
             return;
         }
