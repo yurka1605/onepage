@@ -140,11 +140,9 @@ function showNextMaterial(selector, variants, wrapSelector) {
     var currentData = variants[num];
     var templateText = `<h3>${ currentData.title }</h3>`;
     currentData.text.forEach(p => templateText += `<p>${p}</p>`);
-	if (wrapSelector == ".page6") {
-		templateText += `<button onclick="$('body').addClass('popup-on1')" class="btn callme-btn" id="popup1">Хочу такую же</button>`;
-	} else {
-		templateText += `<button onclick="$('body').addClass('popup-on1')" class="btn callme-btn" id="popup1">Узнать подробнее</button>`;
-	}
+	var btnText = wrapSelector == ".page6" ? 'Хочу такую же' : 'Узнать подробнее';
+    var activate = $(window).width() < 769 ? 'ontouchstart' : 'onclick';
+    templateText += `<button ${ activate }="$('body').addClass('popup-on1')" class="btn callme-btn">${ btnText }</button>`;
 	
     $(`${ wrapSelector }__bg:not(.active) img`).prop('src', `./images/${ currentData.img }`);
     $(`${ wrapSelector }__bg`).each((i, el) => {
