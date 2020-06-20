@@ -10,6 +10,13 @@ body {
 button {
     cursor: pointer;
 }
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
 .page__container {
     padding: 0 60px;
 }
