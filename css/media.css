@@ -268,20 +268,8 @@
 		position: relative;
 		z-index: 1;
 	}
-	.page2__bg img {
-		position: absolute;
-		top: 50%;
-		left: 50%;
+	.bg__img img {
 		width: auto;
-		transform: translate(-50%, -50%);
-		height: 100%;
-	}
-	.page6__bg img {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: auto;
-		transform: translate(-50%, -50%);
 		height: 100%;
 	}
 	.page1__sloy{
