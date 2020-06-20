@@ -125,26 +125,17 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
-    transform: translateX(100%);
-    z-index: -1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     transition: all .3s ease-in-out;
-}
-.page2__bg.active {
-    transform: translateX(0);
-    z-index: 0;
-}
-.page2__bg.noactive {
-    transform: translateX(-100%);
-    z-index: -1;
+    overflow: hidden;
 }
 .page2__bg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    width: 100vw;
     height: auto;
 }
 .page2__text, .page6__text {
@@ -468,26 +459,17 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: auto;
     height: 100%;
-    transform: translateX(100%);
-    z-index: -1;
+    transform: translateX(0);
     transition: all .3s ease-in-out;
 }
-.page6__bg.active {
-    transform: translateX(0);
-    z-index: 0;
-}
-.page6__bg.noactive {
-    transform: translateX(-100%);
-    z-index: -1;
-}
 .page6__bg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    width: 100vw;
     height: auto;
 }
 /* END:page6 */

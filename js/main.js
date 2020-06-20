@@ -144,17 +144,9 @@ function showNextMaterial(selector, variants, wrapSelector) {
     var activate = $(window).width() < 769 ? 'ontouchend' : 'onclick';
     templateText += `<button ${ activate }="$('body').addClass('popup-on1')" class="btn callme-btn">${ btnText }</button>`;
 	
-    $(`${ wrapSelector }__bg:not(.active) img`).prop('src', `./images/${ currentData.img }`);
-    $(`${ wrapSelector }__bg`).each((i, el) => {
-        if ($(el).hasClass('active')) {
-            $(el).addClass('noactive'); 
-        }
-
-        $(el).toggleClass('active');
-    });
+    $(`${ wrapSelector }__bg`).css('transform', `translateX( -${ num * $(window).width() }px )`);
     $(`${ wrapSelector }__text`).addClass('hide');
     setTimeout(() => {
-        $(`${ wrapSelector }__bg.noactive`).removeClass('noactive');
         $(`${ wrapSelector }__text`).removeClass('hide');
         $(`${ wrapSelector }__text`).html(templateText);
     }, 300);
