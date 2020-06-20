@@ -28,7 +28,7 @@ $(document).ready(function() {
 		format: 'DD.MM.YYYY'
 	});
 
-    $('.page2__variant').on('click touchstart', function () {
+    $('.page2__variant').on('click touchend', function () {
         if ($(this).hasClass('active')) {
             return;
         }
@@ -55,19 +55,19 @@ $(document).ready(function() {
         }
     });
     
-    $('.popup__close-btn, .popup-bg').on('click touchstart', function (e) {
+    $('.popup__close-btn, .popup-bg').on('click touchend', function (e) {
         e.preventDefault();
         $('body').removeClass('popup-on1');
         $('body').removeClass('popup-on2');
         $('.popup__control input').each((i, el) => $(el).val(''));
     });
 
-    $('button#popup1').on('click touchstart', function (e) {
+    $('button#popup1').on('click touchend', function (e) {
         e.preventDefault();
         $('body').addClass('popup-on1');
     });
 
-    $('button#popup2').on('click touchstart', function (e) {
+    $('button#popup2').on('click touchend', function (e) {
         e.preventDefault();
         $('body').addClass('popup-on2');
     });
@@ -141,7 +141,7 @@ function showNextMaterial(selector, variants, wrapSelector) {
     var templateText = `<h3>${ currentData.title }</h3>`;
     currentData.text.forEach(p => templateText += `<p>${p}</p>`);
 	var btnText = wrapSelector == ".page6" ? 'Хочу такую же' : 'Узнать подробнее';
-    var activate = $(window).width() < 769 ? 'ontouchstart' : 'onclick';
+    var activate = $(window).width() < 769 ? 'ontouchend' : 'onclick';
     templateText += `<button ${ activate }="$('body').addClass('popup-on1')" class="btn callme-btn">${ btnText }</button>`;
 	
     $(`${ wrapSelector }__bg:not(.active) img`).prop('src', `./images/${ currentData.img }`);

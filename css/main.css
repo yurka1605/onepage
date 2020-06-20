@@ -846,6 +846,9 @@ body.popup-on2 .popup-bg {
 
 
 /* SOCIAL */
+.btn:hover {
+    color: #ffffff;
+}
 .social-btns * {
     margin: 0;
     padding: 0;
