@@ -92,47 +92,47 @@ $(document).ready(function() {
 		});
     });
 
-    $('.page2, .page6').swipe( {
-        swipeStatus: function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection) {
-            if (phase=="end") {
-                //сработает через 20 пикселей то число которое выбрали в threshold
-                if (direction == 'left') {
-                    //сработает при движении влево
-                    var next = '';
-                    if ($(this).hasClass('page2')) {
-                        var num = $('.materials1.active').data('num');
-                        next = num !== 7 ? $('.materials1.active').next() : $('.materials1:first-child');
-                        $('.materials1.active').removeClass('active');
-                        showNextMaterial(next, materials1, '.page2');
-                    } else {
-                        var num = $('.materials2.active').data('num');
-                        next = num !== 7 ? $('.materials2.active').next() : $('.materials2:first-child');
-                        $('.materials2.active').removeClass('active');
-                        showNextMaterial(next, materials2, '.page6');
-                    }
-                    $(next).addClass('active');
-                }
-                if (direction == 'right') {
-                    //сработает при движении вправо
-                    var prev = '';
-                    if ($(this).hasClass('page2')) {
-                        var num = $('.materials1.active').data('num');
-                        prev = num !== 0 ? $('.materials1.active').prev() : $('.materials1:last-child');
-                        $('.materials1.active').removeClass('active');
-                        showNextMaterial(prev, materials1, '.page2');
-                    } else {
-                        var num = $('.materials2.active').data('num');
-                        prev = num !== 0 ? $('.materials2.active').prev() : $('.materials2:last-child');
-                        $('.materials2.active').removeClass('active');
-                        showNextMaterial(prev, materials2, '.page6');
-                    }
-                    $(prev).addClass('active');
-                }
-            }
-        },
-        triggerOnTouchEnd: false,
-        threshold: 20 // сработает через 20 пикселей
-    });
+    // $('.page2, .page6').swipe( {
+    //     swipeStatus: function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection) {
+    //         if (phase=="end") {
+    //             //сработает через 20 пикселей то число которое выбрали в threshold
+    //             if (direction == 'left') {
+    //                 //сработает при движении влево
+    //                 var next = '';
+    //                 if ($(this).hasClass('page2')) {
+    //                     var num = $('.materials1.active').data('num');
+    //                     next = num !== 7 ? $('.materials1.active').next() : $('.materials1:first-child');
+    //                     $('.materials1.active').removeClass('active');
+    //                     showNextMaterial(next, materials1, '.page2');
+    //                 } else {
+    //                     var num = $('.materials2.active').data('num');
+    //                     next = num !== 7 ? $('.materials2.active').next() : $('.materials2:first-child');
+    //                     $('.materials2.active').removeClass('active');
+    //                     showNextMaterial(next, materials2, '.page6');
+    //                 }
+    //                 $(next).addClass('active');
+    //             }
+    //             if (direction == 'right') {
+    //                 //сработает при движении вправо
+    //                 var prev = '';
+    //                 if ($(this).hasClass('page2')) {
+    //                     var num = $('.materials1.active').data('num');
+    //                     prev = num !== 0 ? $('.materials1.active').prev() : $('.materials1:last-child');
+    //                     $('.materials1.active').removeClass('active');
+    //                     showNextMaterial(prev, materials1, '.page2');
+    //                 } else {
+    //                     var num = $('.materials2.active').data('num');
+    //                     prev = num !== 0 ? $('.materials2.active').prev() : $('.materials2:last-child');
+    //                     $('.materials2.active').removeClass('active');
+    //                     showNextMaterial(prev, materials2, '.page6');
+    //                 }
+    //                 $(prev).addClass('active');
+    //             }
+    //         }
+    //     },
+    //     triggerOnTouchEnd: false,
+    //     threshold: 20 // сработает через 20 пикселей
+    // });
 });
 
 function showNextMaterial(selector, variants, wrapSelector) {
