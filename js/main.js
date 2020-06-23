@@ -111,8 +111,7 @@ $(document).ready(function() {
                         showNextMaterial(next, materials2, '.page6');
                     }
                     $(next).addClass('active');
-                }
-                if (direction == 'right') {
+                } else if (direction == 'right') {
                     //сработает при движении вправо
                     var prev = '';
                     if ($(this).hasClass('page2')) {
@@ -127,11 +126,16 @@ $(document).ready(function() {
                         showNextMaterial(prev, materials2, '.page6');
                     }
                     $(prev).addClass('active');
+                } else {
+                    if ($(window).width() > 769) {
+                        event.preventDefault();
+                        throw 'noscroll';
+                    }
                 }
             }
         },
         triggerOnTouchLeave: true,
-        threshold: 0 // сработает через 20 пикселей
+        threshold: 80 // сработает через 20 пикселей
     });
 });
 
